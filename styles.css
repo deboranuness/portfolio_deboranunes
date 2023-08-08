@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --text: #211a0d;
+    --background: #fcfaf8;
+    --primary: #fcb43a;
+    --secondary: #23212c;
+    --accent: #dc8f09;
+    --primary_light: rgba(252, 181, 58, 0.5);
+    --secondary_shadow: rgba(35, 33, 44, 0.5);
+    --accent_light: rgba(220, 143, 9, 0.5);
+
+    --dm_text: #fafafa;
+    --dm_background: #050505;
+    --dm_primary: #fcb43a;
+    --dm_secondary: #17161d;
+    --dm_accent: #f9c56c;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+header {
+    padding: 50px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    margin: 0 10%;
+}
+.developer_profile_img{
+    position: relative;
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.home .developer_profile_img img{
+    position: absolute;
+    width: 100%;
+        height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+}
+.home .developer_greeting{
+    font-weight: 300;
+    font-size: 2em;
+}
+.home .developer_role{
+    margin-top: 10px;
+    display: block;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+.home .developer_name{
+    display: block;
+    font-weight: 700;
+    font-size: 5em;
+    color: var(--primary);
+    background: -webkit-linear-gradient(135deg, var(--secondary), var(--primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.home_buttons{
+    margin-top: 100px;
+}
+.home_buttons .about_me, .home_buttons .download_cv{
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 15px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.home_buttons .about_me{
+    background-color: var(--primary);
+    color: var(--secondary);
+    margin-right: 10px;
+    border: 3px solid var(--primary);
+    transition: ease-in-out 0.3s;
+}
+.home_buttons .about_me:hover{
+    background-color: var(--accent);
+    border: 3px solid var(--accent);
+    transform: translateY(-0.25em);
+    box-shadow: 0px 0px 40px var(--primary_light);
+    transition: ease-in-out 0.3s;
+}
+.home_buttons .download_cv{
+    background-color: transparent;
+    color: var(--text);
+    margin-left: 10px;
+    border: 3px solid var(--secondary);
+    transition: ease-in 0.3s;
+}
+.home_buttons .download_cv:hover{
+    background-color: var(--secondary);
+    color: var(--dm_text);
+    transform: translateY(-0.25em);
+    box-shadow: 0px 0px 40px var(--secondary_shadow);
+    transition: ease-in 0.3s;
+}

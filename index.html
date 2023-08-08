@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Débora Nunes | Portfólio</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Débora</h1>
+        </div>
+        <div class="menu">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#">Projetos</a>
+                <a href="#">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="home">
+            <div class="home_text">
+                <div class="developer_presentation">
+                    <p class="developer_greeting">&#128075; Olá, eu sou a</p>
+                    <p class="developer_name">Débora Nunes</p>
+                    <p class="developer_role">Uma desenvolvedora Web</p>
+                </div>
+
+                <div class="home_buttons">
+                    <button class="about_me">Sobre mim</button>
+                    <button class="download_cv">Baixar CV</button>
+                </div>
+            </div>
+            <div class="developer_profile_img">
+                <img src="img/developer_profile_img1.png" class="profile_img" data-value="-2" alt="Fundo da imagem de perfil da desenvolvedora">
+                <img src="img/developer_profile_img2.png" class="profile_img" data-value="6" alt="Fundo da imagem de perfil da desenvolvedora">
+                <img src="img/developer_profile_img3.png" class="profile_img" data-value="4" alt="Imagem de perfil da desenvolvedora">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script>
+        document.addEventListener("mousemove", parallax);
+        function parallax(e){
+            document.querySelectorAll(".profile_img").forEach(function(move){
+
+                var moving_value = move.getAttribute("data-value");
+                var x = (e.clientX * moving_value) / 250;
+                var y = (e.clientY * moving_value) / 250;
+
+                move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+            });
+        }
+    </script>
+</body>
+</html>
