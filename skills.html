@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Minhas Skills | Portfólio - Débora Nunes</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html">Débora</a></h1>
+        </div>
+        <div class="menu">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index.html#about">Sobre</a>
+                <a href="projects.html">Projetos</a>
+                <a href="skills.html">Skills</a>
+                <a href="contact.html">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+
+            <p class="main_paragraph">
+                Aqui estão algumas das habilidades e competências que tornam minha jornada no desenvolvimento algo empolgante e cheio de possibilidades:
+            </p>
+
+            <div class="content_description">
+                <p class="common_paragraph">
+                    🛠️ Desenvolvimento Web: Dou vida a interfaces interativas e dinâmicas por meio de HTML, CSS e JavaScript. Minha experiência com Frameworks como Bootstrap e bibliotecas como React impulsionam a criação de experiências excepcionais para os usuários.
+                </p>
+                <p class="common_paragraph">
+                    🌐 Front-End: Tenho paixão pelo universo Front-End. Do design responsivo à usabilidade intuitiva, minha busca incessante pela excelência reflete-se em cada linha de código que escrevo.
+                </p>
+                <p class="common_paragraph">
+                    🚀 Agilidade: O mundo do desenvolvimento é ágil e em constante evolução. Minha mentalidade ágil me permite abraçar mudanças, adotar novas tecnologias e entregar resultados consistentes em ciclos curtos.
+                </p>
+                <p class="common_paragraph">
+                    🔍 Resolução de Problemas: Sou movida por desafios. Minhas habilidades analíticas me permitem decompor problemas complexos em partes gerenciáveis e encontrar soluções elegantes e eficazes.
+                </p>
+                <p class="common_paragraph">
+                    🤝 Trabalho em Equipe: Colaborar é fundamental. Minha disposição para trabalhar em equipe, ouvir ativamente e contribuir com ideias me torna uma colega valiosa em qualquer ambiente.
+                </p>
+                <p class="common_paragraph">
+                    📢 Comunicação Clara: A habilidade de comunicar de maneira clara e eficaz é crucial. Transmito ideias de forma acessível, seja conversando com colegas de equipe ou documentando projetos.
+                </p>
+                <p class="common_paragraph">
+                    📊 Suporte Técnico: Minha experiência no suporte técnico ao cliente solidificou minha capacidade de entender as necessidades do usuário final, oferecendo soluções personalizadas e eficientes.
+                </p>
+                <p class="common_paragraph">
+                    💡 Melhoria Contínua: Buscar a excelência é parte da minha natureza. Estou sempre à procura de maneiras de aprimorar processos, aprender novas tecnologias e crescer profissionalmente.
+                </p>
+            </div>
+
+            <p class="main_paragraph">
+                Estas são apenas algumas das habilidades que desenvolvi até aqui. Minha jornada de aprendizado está em constante evolução, e estou animada para encarar desafios maiores e abraçar novas oportunidades no mundo do desenvolvimento!
+            </p>
+
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script>
+        document.addEventListener("mousemove", parallax);
+        function parallax(e){
+            document.querySelectorAll(".profile_img").forEach(function(move){
+
+                var moving_value = move.getAttribute("data-value");
+                var x = (e.clientX * moving_value) / 250;
+                var y = (e.clientY * moving_value) / 250;
+
+                move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+            });
+        }
+    </script>
+</body>
+</html>

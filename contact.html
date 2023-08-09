@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Entre em contato | Portfólio - Débora Nunes</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html">Débora</a></h1>
+        </div>
+        <div class="menu">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index.html#about">Sobre</a>
+                <a href="projects.html">Projetos</a>
+                <a href="skills.html">Skills</a>
+                <a href="contact.html">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+
+            <p class="main_paragraph">
+                Gostou do meu trabalho? Deixe uma mensagem pelo formulário ou entre em contato direto em um dos meios abaixo! 📞
+            </p>
+
+            <div class="content_description">
+                <p class="common_paragraph">
+                    🌐 LinkedIn: linkedin.com/in/deboranuness
+                </p>
+                <p class="common_paragraph">
+                    📧 E-mail: debora.nuness@hotmail.com
+                </p>
+                <p class="common_paragraph">
+                    [formulário de contato em construção]
+                </p>
+                <p class="common_paragraph">
+                    Vamos juntos construir o futuro digital! 💡👩‍💻
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script>
+        document.addEventListener("mousemove", parallax);
+        function parallax(e){
+            document.querySelectorAll(".profile_img").forEach(function(move){
+
+                var moving_value = move.getAttribute("data-value");
+                var x = (e.clientX * moving_value) / 250;
+                var y = (e.clientY * moving_value) / 250;
+
+                move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+            });
+        }
+    </script>
+</body>
+</html>

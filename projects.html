@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Meus Projetos | Portfólio - Débora Nunes</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html">Débora</a></h1>
+        </div>
+        <div class="menu">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index.html#about">Sobre</a>
+                <a href="projects.html">Projetos</a>
+                <a href="skills.html">Skills</a>
+                <a href="contact.html">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+
+            <p class="main_paragraph">
+                Vamos explorar alguns dos projetos empolgantes? 🚀
+            </p>
+
+            <div class="content_description">
+                <p class="common_paragraph">
+                    🌟 ZVpay - Soluções em Pagamento: Durante minha jornada profissional, tive a oportunidade de colaborar com a equipe de desenvolvimento do ZVpay. Esta solução oferece recursos inteligentes para transações de recebimentos e pagamentos, incluindo cobranças por cartões de crédito sem maquininhas e integração via API com ERPs ou sistemas financeiros.
+                </p>
+                <p class="common_paragraph">
+                    O ZVpay oferece soluções de pagamentos personalizadas, proporcionando aos clientes operações mais eficientes e seguras.
+                </p>
+                <p class="common_paragraph">
+                    Minha contribuição neste projeto foi dar vida à interface do usuário. Por meio do desenvolvimento Front-End, incorporei o Framework Bootstrap para criar uma experiência de usuário excepcional.
+                </p>
+                <p class="common_paragraph">
+                    Site: www.zvpay.com.br
+                </p>
+            </div>
+            
+            <div class="project_description">
+                <p class="common_paragraph">
+                    🌱 We Bio - A célula virtual: Participei do desenvolvimento do We Bio, um aplicativo interativo e um site baseados no conteúdo de citologia. O aplicativo apresenta as células animal e vegetal com suas respectivas organelas em forma tridimensional, além de conter a descrição de cada uma delas e um quiz para fixar o conteúdo apresentado pela aplicação.
+                </p>
+                <p class="common_paragraph">
+                    Este projeto foi desenvolvido em grupo e teve participação em feiras de ciência, como: FEBRAT, FEBRACE, FEMIC, Mostras tecnológicas da FUNEC e UFMG Jovem.
+                </p>
+                <p class="common_paragraph">
+                    Fiz parte da equipe de coordenação do projeto, liderando o marketing do mesmo. Adquiri habilidades de manipulação de programas digitais e desenvolvimento web ao longo do seu desenvolvimento.
+                </p>
+                <p class="common_paragraph">
+                    Site: www.projetowebio.com.br
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script>
+        document.addEventListener("mousemove", parallax);
+        function parallax(e){
+            document.querySelectorAll(".profile_img").forEach(function(move){
+
+                var moving_value = move.getAttribute("data-value");
+                var x = (e.clientX * moving_value) / 250;
+                var y = (e.clientY * moving_value) / 250;
+
+                move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+            });
+        }
+    </script>
+</body>
+</html>
