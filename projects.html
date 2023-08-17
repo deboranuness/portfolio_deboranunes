@@ -1,27 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
     <title>Meus Projetos | Portfólio - Débora Nunes</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1><a href="index.html">Débora</a></h1>
-        </div>
-        <div class="menu">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="index.html#about">Sobre</a>
-                <a href="projects.html">Projetos</a>
-                <a href="skills.html">Skills</a>
-                <a href="contact.html">Contato</a>
-            </nav>
-        </div>
-    </header>
 
     <main>
         <div class="content">
@@ -62,22 +44,6 @@
 
         </div>
     </main>
-
-    <footer>
-
-    </footer>
-    <script>
-        document.addEventListener("mousemove", parallax);
-        function parallax(e){
-            document.querySelectorAll(".profile_img").forEach(function(move){
-
-                var moving_value = move.getAttribute("data-value");
-                var x = (e.clientX * moving_value) / 250;
-                var y = (e.clientY * moving_value) / 250;
-
-                move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
-            });
-        }
-    </script>
+    
 </body>
 </html>

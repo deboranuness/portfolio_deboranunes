@@ -3,81 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Débora Nunes | Portfólio</title>
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Débora Nunes | Portfólio</title>
+
+    <script src="js/header_footer.js"></script>
+
+    <script src="js/pageLoader.js"></script>
+
+    <script src="js/parallax.js"></script>
 </head>
 <body>
+
     <header>
         <div class="logo">
             <h1><a href="index.html">Débora</a></h1>
         </div>
         <div class="menu">
             <nav>
-                <a href="index.html">Home</a>
-                <a href="index.html#about">Sobre</a>
-                <a href="projects.html">Projetos</a>
-                <a href="skills.html">Skills</a>
-                <a href="contact.html">Contato</a>
+                <a href="home.html" data-page="home.html">Home</a>
+                <a href="projects.html" data-page="projects.html">Projetos</a>
+                <a href="skills.html" data-page="skills.html">Skills</a>
+                <a href="contact.html" data-page="contact.html">Contato</a>
             </nav>
         </div>
     </header>
 
-    <main>
-        <div class="home" id="home">
-            <div class="home_text">
-                <div class="developer_presentation">
-                    <p class="developer_greeting">&#128075; Olá, eu sou a</p>
-                    <p class="developer_name">Débora Nunes</p>
-                    <p class="developer_role">Uma desenvolvedora Web</p>
-                </div>
-
-                <div class="home_buttons">
-                    <a class="about_me" href="#about">Sobre mim</a>
-                    <a class="download_cv">Baixar CV</a>
-                </div>
-            </div>
-            <div class="developer_profile_img">
-                <img src="img/developer_profile_img1.png" class="profile_img" data-value="-2" alt="Fundo da imagem de perfil da desenvolvedora">
-                <img src="img/developer_profile_img2.png" class="profile_img" data-value="6" alt="Fundo da imagem de perfil da desenvolvedora">
-                <img src="img/developer_profile_img3.png" class="profile_img" data-value="4" alt="Imagem de perfil da desenvolvedora">
-            </div>
-        </div>
-
-        <div class="content" id="about">
-            <div class="content_description">
-                <p class="common_paragraph">
-                    Meu interesse pela tecnologia surgiu há tempos, ainda na infância. Ao longo dos anos, explorei o mundo digital e me aprofundei cada vez mais. Agora, me aventuro no universo do Desenvolvimento Web.
-                </p>
-                <p class="common_paragraph">
-                    Até o momento, em minha jornada acadêmica, concluí o Técnico em Informática e estou cursando o Tecnólogo em Análise e Desenvolvimento de Sistemas. Já em minha experiência profissional no suporte técnico ao cliente, percebi a importância de criar soluções práticas para atender às necessidades dos usuários, fortalecendo minhas habilidades de resolução de problemas e comunicação.
-                </p>
-                <p class="common_paragraph">
-                    Em meu tempo livre, adoro curtir uma boa música, me perder em histórias cativantes de séries e filmes e me divertir com os meus jogos favoritos. Além disso, valorizo bastante os momentos de qualidade com família e amigos, pois acredito que essas conexões deixam a vida mais rica e recheada de memórias especiais.
-                </p>
-                <p class="common_paragraph">
-                    Estou ansiosa para continuar minha jornada no Desenvolvimento Web, criando soluções inovadoras e aprimorando constantemente minhas habilidades! 💡👩‍💻
-                </p>
-            </div>
-        </div>
-
-    </main>
+    <div id="content"></div>
 
     <footer>
-
+        <p style="text-align: center;">Olá, este é o site da debrinha! :D</p>
     </footer>
-    <script>
-        document.addEventListener("mousemove", parallax);
-        function parallax(e){
-            document.querySelectorAll(".profile_img").forEach(function(move){
 
-                var moving_value = move.getAttribute("data-value");
-                var x = (e.clientX * moving_value) / 250;
-                var y = (e.clientY * moving_value) / 250;
-
-                move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
-            });
-        }
-    </script>
 </body>
 </html>
