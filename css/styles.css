@@ -54,6 +54,29 @@ nav a:hover {
     color: var(--accent);
 }
 
+/**RODAPÉ | FOOTER**/
+.footer{
+    text-align: center;
+    background-color: var(--secondary);
+    color: var(--accent);
+    font-size: 0.9em;
+    padding: 20px;
+}
+.footer_socials{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    margin: 20px auto 0px;
+}
+.footer_social img{
+    width: 20px;
+    transition: ease-in-out .3s;
+}
+.footer_social img:hover{
+    width: 25px;
+    transition: ease-in-out .3s;
+}
+
 /**HOME | PARAGRAPHS**/
 .home{
     display: flex;
