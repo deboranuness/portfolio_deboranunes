@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/**PALETA DE CORES | COLLOR PALLETE**/
 :root {
     --text: #211a0d;
     --background: #fcfaf8;
@@ -16,6 +17,7 @@
     --dm_secondary: #17161d;
     --dm_accent: #f9c56c;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -27,6 +29,7 @@ html{
     color: var(--text);
 }
 
+/**CABEÇALHO | HEADER**/
 header {
     padding: 50px 150px;
     display: flex;
@@ -42,16 +45,16 @@ header {
 nav {
     text-align: center;
 }
-
 nav a {
     color: var(--text);
     text-decoration: none;
     padding: 10px 20px;
 }
-
 nav a:hover {
     color: var(--accent);
 }
+
+/**HOME | PARAGRAPHS**/
 .home{
     display: flex;
     justify-content: space-between;
@@ -152,7 +155,7 @@ main{
     margin: 100px 0;
 }
 .common_paragraph, .main_paragraph{
-    line-height: 2;
+    line-height: 2.5;
 }
 .main_paragraph{
     margin: 50px 0;
