@@ -77,11 +77,11 @@ nav a:hover {
     transition: ease-in-out .3s;
 }
 .footer_social img:hover{
-    width: 25px;
+    width: 22px;
     transition: ease-in-out .3s;
 }
 
-/**HOME | PARAGRAPHS**/
+/**HOME**/
 .home{
     display: flex;
     justify-content: space-between;
@@ -97,6 +97,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    pointer-events: none;
 }
 .home .developer_profile_img img{
     position: absolute;
@@ -189,4 +190,7 @@ main{
 }
 .common_paragraph{
     margin: 50px 0;
+}
+.common_paragraph strong, .main_paragraph strong{
+    font-weight: 700;
 }
