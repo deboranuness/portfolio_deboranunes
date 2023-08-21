@@ -68,6 +68,10 @@ nav a:hover {
     width: 10%;
     margin: 20px auto 0px;
 }
+.footer_social{
+    display: block;
+    width: 100%;
+}
 .footer_social img{
     width: 20px;
     transition: ease-in-out .3s;
