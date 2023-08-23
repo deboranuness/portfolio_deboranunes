@@ -50,8 +50,12 @@ nav a {
     text-decoration: none;
     padding: 10px 20px;
 }
-nav a:hover {
+nav .menu_page{
+    transition: ease-in-out 0.3s;
+}
+nav .menu_page:hover{
     color: var(--accent);
+    transition: ease-in-out 0.3s;
 }
 
 /**RODAPÉ | FOOTER**/
@@ -61,24 +65,25 @@ nav a:hover {
     color: var(--accent);
     font-size: 0.9em;
     padding: 20px;
+    bottom: 0;
 }
 .footer_socials{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 10%;
     margin: 20px auto 0px;
 }
 .footer_social{
-    display: block;
     width: 100%;
+    transition: ease-in-out 0.3s;
 }
-.footer_social img{
-    width: 20px;
-    transition: ease-in-out .3s;
+.footer_social a{
+    font-size: 20px;
+    color: var(--dm_text);
 }
-.footer_social img:hover{
-    width: 22px;
-    transition: ease-in-out .3s;
+.footer_social:hover{
+    transform: scale(1.3);
+    transition: ease-in-out 0.3s;
 }
 
 /**HOME**/
