@@ -1,32 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /**PALETA DE CORES | COLLOR PALLETE**/
-:root {
-    --text: #211a0d;
-    --background: #fcfaf8;
-    --primary: #fcb43a;
-    --secondary: #23212c;
-    --accent: #dc8f09;
-    --primary_light: rgba(252, 181, 58, 0.5);
-    --secondary_shadow: rgba(35, 33, 44, 0.5);
-    --accent_light: rgba(220, 143, 9, 0.5);
-
-    --dm_text: #fafafa;
-    --dm_background: #050505;
-    --dm_primary: #fcb43a;
-    --dm_secondary: #17161d;
-    --dm_accent: #f9c56c;
+:root{
+    --text: #ece7f8;
+    --background: #06030c;
+    --primary: #1c1826;
+    --secondary: #a398b3;
+    --accent: #5020cb;
+    --primary_light: rgb(28, 24, 38);
+    --secondary_shadow: rgb(163, 152, 179);
+    --accent_light: rgb(80, 32, 203);
 }
-
+.light-theme {
+    --text: #0c0718;
+    --background: #f6f3fc;
+    --primary: #ddd9e7;
+    --secondary: #574c67;
+    --accent: #6534df;
+    --primary_light: rgb(221, 217, 231);
+    --secondary_shadow: rgb(87, 76, 103);
+    --accent_light: rgb(101, 52, 223);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+body{
+    color: var(--text);
     font-family: 'Roboto', sans-serif;
     background-color: var(--background);
-    color: var(--text);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 /**CABEÇALHO | HEADER**/
@@ -37,13 +41,19 @@ header {
     align-items: center;
 }
 .logo a{
-    color: var(--primary);
+    color: var(--accent);
     text-decoration: none;
     font-weight: 900;
     font-size: 2em;
 }
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 nav {
     text-align: center;
+    margin: 0 50px;
 }
 nav a {
     color: var(--text);
@@ -57,12 +67,24 @@ nav .menu_page:hover{
     color: var(--accent);
     transition: ease-in-out 0.3s;
 }
+.theme-button{
+   width: 40px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: var(--accent);
+    outline: none;
+}
+.theme-icon {
+    display: block;
+    font-size: 1.8em;
+}
 
 /**RODAPÉ | FOOTER**/
 .footer{
     text-align: center;
-    background-color: var(--secondary);
-    color: var(--accent);
+    background-color: var(--primary);
+    color: var(--text);
     font-size: 0.9em;
     padding: 20px;
     bottom: 0;
@@ -96,7 +118,7 @@ nav .menu_page:hover{
 }
 .developer_profile_img{
     position: relative;
-    width: 50vw;
+    width: 40vw;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -142,7 +164,7 @@ span.hand_waving_emoji{
     font-weight: 700;
     font-size: 5em;
     color: var(--primary);
-    background: -webkit-linear-gradient(135deg, var(--secondary), var(--primary));
+    background: -webkit-linear-gradient(135deg, var(--secondary), var(--accent));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
