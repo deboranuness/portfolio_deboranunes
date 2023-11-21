@@ -68,7 +68,7 @@ nav .menu_page:hover{
     transition: ease-in-out 0.3s;
 }
 .theme-button{
-   width: 40px;
+    width: 60px;
     cursor: pointer;
     border: none;
     background: none;
@@ -78,6 +78,15 @@ nav .menu_page:hover{
 .theme-icon {
     display: block;
     font-size: 1.8em;
+}
+.theme-emoji-popup{
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    background-color: var(--primary);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 16px -4px var(--secondary_shadow);
 }
 
 /**RODAPÉ | FOOTER**/
@@ -177,7 +186,7 @@ span.hand_waving_emoji{
     border-top: 4px solid var(--text);
 }
 .developer_role #text_morphing{
-    margin: 0 10px;
+    margin: 0 5px;
     font-weight: 700;
     color: var(--accent);
 }

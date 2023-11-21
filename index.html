@@ -14,7 +14,10 @@
     <script src="js/parallax.js"></script>
     <script src="js/light-dark-mode.js"></script>
     <script src="js/text-slider.js"></script>
+
     <script src="https://kit.fontawesome.com/85b07bb57c.js" crossorigin="anonymous"></script>
+    <script src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f629/lottie.json"></script>
+
 </head>
 <body>
 
@@ -31,9 +34,17 @@
                     <a class="menu_page" href="contact.html" data-page="contact.html">Contato</a>
                 </nav>
             </div>
-            <button onclick="toggleTheme()" id="theme-button" class="theme-button">
-                <i class="fas fa-moon theme-icon"></i>
-            </button>
+            <div class="toggle-theme">
+                <button onclick="toggleTheme()" id="theme-button" class="theme-button">
+                    <i class="fas fa-moon theme-icon"></i>
+                </button>
+                <div id="emoji-popup" class="theme-emoji-popup">
+                    <picture>
+                        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f629/512.webp" type="image/webp">
+                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f629/512.gif" alt="😩" width="40" height="40">
+                    </picture>
+                </div>
+            </div>
         </div>
     </header>
 
