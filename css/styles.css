@@ -10,6 +10,9 @@
     --primary_light: rgb(28, 24, 38);
     --secondary_shadow: rgb(163, 152, 179);
     --accent_light: rgb(80, 32, 203);
+    --static7: rgba(255, 255, 255, 0.1);
+    --static8: rgba(255, 255, 255, 0.05);
+    --static9: rgba(255, 255, 255, 0.3);
 }
 .light-theme {
     --text: #0c0718;
@@ -20,6 +23,8 @@
     --primary_light: rgb(221, 217, 231);
     --secondary_shadow: rgb(87, 76, 103);
     --accent_light: rgb(101, 52, 223);
+    --static7: rgba(0, 0, 0, 0.1);
+    --static8: rgba(0, 0, 0, 0.05);
 }
 *{
     margin: 0;
@@ -31,6 +36,7 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: var(--background);
     transition: background-color 0.3s, color 0.3s;
+    --static9: rgba(0, 0, 0, 0.3);
 }
 
 /**CABEÇALHO | HEADER**/
@@ -293,4 +299,81 @@ main{
 }
 .common_paragraph strong, .main_paragraph strong{
     font-weight: 700;
+}
+
+/**PROJETOS | PROJECTS**/
+.project_description{
+    margin: 100px 0;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: var(--static8);
+}
+.project_title{
+    display: inline-block;
+    color: var(--accent);
+    font-size: 2em;
+    font-weight: 700;
+}
+.project_columns{
+    display: flex;
+}
+.project_columnOne, .project_columnTwo{
+    padding: 30px 10px 0px 10px;
+}
+.project_columnOne{
+    width: 40%;
+}
+.project_columnTwo{
+    width: 60%;
+}
+.project_image{
+    margin: 30px 0;
+}
+.project_columns img{
+    width: 100%;
+    border-radius: 10px;
+}
+.project_technologies, .project_website{
+    margin: 30px 0;
+    display: flex;
+    color: var(--accent);
+}
+.project_technology{
+    display: flex;
+    margin: 0 7px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--primary);
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.5s;
+}
+.project_technology:hover{
+    background-color: var(--static9);
+    transition: ease-in-out 0.5s;
+}
+.project_technologies i{
+    font-size: 1.25em;
+}
+.project_website{
+    align-items: center;
+}
+.project_website a{
+    color: var(--text);
+    font-weight: 400;
+    transition: ease-in-out 0.2s;
+}
+.project_website a:hover{
+    color: var(--accent);
+    transition: ease-in-out 0.2s;
+}
+.project_website i{
+    color: var(--accent);
+    margin: 0 10px;
+    font-size: 1.25em;
+}
+.project_columns .common_paragraph{
+    margin: 30px 0;
 }
