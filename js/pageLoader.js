@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    loadContent("home.html");
+    loadContent("pages/home.html");
     const links = document.querySelectorAll("a[data-page]");
     links.forEach(link => {
         link.addEventListener("click", function(event) {
