@@ -1,14 +1,4 @@
-/*var sliderWords = ["dedicada", "entusiasta", "versátil", "comprometida", "proativa", "criativa"];
-var index = 0;
-
-function textSlider() {
-  document.getElementById("text_morphing").innerHTML = sliderWords[index];
-  index = (index + 1) % sliderWords.length;
-}
-
-setInterval(textSlider, 2500);*/
-
-  var sliderWords = ["dedicada", "entusiasta", "versátil", "comprometida", "proativa", "criativa"];
+var sliderWords = ["dedicada", "entusiasta", "versátil", "comprometida", "proativa", "criativa"];
   var index = 0;
   var isInTypingAnimation = false;
 
